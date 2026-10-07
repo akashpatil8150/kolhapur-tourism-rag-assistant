@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+jinja2
+pymongo
+passlib
+python-multipart
+pypdf
+sentence-transformers
+faiss-cpu
+python-dotenv
+langchain-community
+langchain-core
+langchain-huggingface
+langchain-text-splitters
+groq

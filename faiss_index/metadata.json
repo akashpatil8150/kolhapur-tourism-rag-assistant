@@ -1,0 +1,7 @@
+{
+  "pdf_mtime_ns": 1784876779338367500,
+  "pdf_size": 1475895,
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "chunk_size": 850,
+  "chunk_overlap": 100
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tourism AI</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- Header -->
+
+        <div class="header">
+
+            <div>
+
+                <h2>🌍 Tourism AI</h2>
+
+                <p class="welcome">
+                    Welcome, <strong>{{username}}</strong> 👋
+                </p>
+
+            </div>
+
+            <a href="/logout">
+                <button class="logout-btn">
+                    Logout
+                </button>
+            </a>
+
+        </div>
+
+        <!-- Chat Container -->
+
+        <div class="container">
+
+            <div id="chat-box">
+
+                <!-- Welcome Message -->
+
+                <div class="bot-message">
+
+                    <strong>🤖 Tourism AI</strong>
+
+                    <br><br>
+
+                    Hello <b>{{username}}</b> 👋
+
+                    <br><br>
+
+                    I'm your AI travel assistant.
+
+                    <br><br>
+
+                    You can ask me about:
+
+                    <br>
+
+                    🛕 Temples
+
+                    <br>
+
+                    🏰 Tourist Attractions
+
+                    <br>
+
+                    🍛 Famous Food
+
+                    <br>
+
+                    🚌 Transport
+
+                    <br>
+
+                    🏨 Hotels
+
+                    <br>
+
+                    🛍️ Shopping
+
+                    <br><br>
+
+                    <b>Example Questions</b>
+
+                    <br>
+
+                    • Tell me about Mahalaxmi Temple
+
+                    <br>
+
+                    • Best places to visit in Kolhapur
+
+                    <br>
+
+                    • Famous food in Kolhapur
+
+                    <br>
+
+                    • Hotels near Rankala Lake
+
+                </div>
+
+            </div>
+
+            <!-- Input -->
+
+            <div class="input-area">
+
+                <input
+                    type="text"
+                    id="question"
+                    placeholder="Ask me about Kolhapur Tourism..."
+                    autocomplete="off"
+                >
+
+                <button
+                    id="send-btn"
+                    onclick="sendMessage()">
+
+                    Send
+
+                </button>
+
+            </div>
+
+            <div class="note">
+
+                💡 Tourism AI can make mistakes. Please verify important travel information..
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        const USERNAME = "{{username}}";
+
+    </script>
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>

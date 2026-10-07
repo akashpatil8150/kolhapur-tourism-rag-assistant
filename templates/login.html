@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Tourism AI</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="auth-card">
+
+        <div class="logo">
+
+            🌍
+
+        </div>
+
+        <h1>Tourism AI</h1>
+
+        <p class="subtitle">
+
+            Explore Tourism with Artificial Intelligence
+
+        </p>
+
+        {% if registered %}
+
+        <div class="success">
+
+            ✅ Registration Successful! Please Login.
+
+        </div>
+
+        {% endif %}
+
+        <form action="/login" method="post">
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required
+            >
+
+            <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+            >
+
+            <button type="submit">
+
+                Login
+
+            </button>
+
+        </form>
+
+        <p class="bottom-text">
+
+            Don't have an account?
+
+            <a href="/register">
+
+                Register
+
+            </a>
+
+        </p>
+
+    </div>
+
+</body>
+
+</html>
